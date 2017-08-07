@@ -1,0 +1,28 @@
+<h4>Balance Trasfer</h4>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ullam facere nulla, sed! Voluptatibus error iste tempore accusantium quis nesciunt, iusto provident velit porro debitis. Veritatis vero expedita omnis, esse distinctio deleniti aliquid explicabo
+    quam reprehenderit quo reiciendis ducimus culpa ab quas aliquam atque nemo dolorem quidem non in ut. Quos recusandae alias cupiditate provident deserunt, repellendus, nisi ducimus adipisci laudantium delectus. Debitis dolore quod praesentium et nam
+    provident labore sint. Provident porro magnam ut tempora, voluptas quisquam nihil. Nemo repellat, est cum neque ea nihil debitis quam, porro tenetur libero aperiam, nesciunt dicta! Totam ducimus est, rem a, similique commodi dolorum amet ea excepturi,
+    maxime mollitia! Nesciunt laboriosam vel facilis, vero. Provident aliquam fugit voluptatum blanditiis adipisci nam deleniti.
+</p>
+
+<form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+    <div class="form-group">
+        <label>Account Balance</label>
+        <input type="text" formControlName="balance" class="form-control" required minlength="1" maxlength="10">
+    </div>
+    <div class="form-group">
+        <label>Interest Rate</label>
+        <input type="text" formControlName="rate" class="form-control" required minlength="1" maxlength="10">
+        <p class="help-block">This is normally 4%</p>
+    </div>
+    <button class="btn btn-primary">Submit</button>
+</form>
+<!--<ul *ngIf="balance>10">
+    <li *ngFor="let name of labels">
+        Label: {{name}}
+    </li>
+</ul>
+
+<p [ngClass]="{error:balance===''}">Enter Balance Rate</p>
+<p [ngClass]="{error:rate===''}">Enter Interest Rate</p>-->
